@@ -84,7 +84,7 @@ body{
 
 .burbuja{
     border-radius: 50%;
-    background: rgb(241, 154, 154);
+    background: rgb(52, 66, 255);
     opacity: .3;
 
     position: absolute;
