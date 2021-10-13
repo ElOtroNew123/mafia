@@ -43,7 +43,7 @@
     width: 100%;
     bottom: 0;
     left: 0;
-    background: rgb(170, 159, 159);
+    background: rgb(253, 109, 109);
     z-index: -1;
     clip-path: polygon(0 100%,100% 100% ,100% 0);
 }
