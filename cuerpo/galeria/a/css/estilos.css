@@ -144,7 +144,11 @@ body{
 .card:hover .description{
     padding: 40px;
 }
-
+.titulo{
+    text-align: center;
+    margin:35px 0 20px 0;
+    font-weight: 300;
+}
 .card .description h2{
     margin-top: 10px;
 }
