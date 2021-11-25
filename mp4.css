@@ -2,6 +2,10 @@
     font-family:quieres;
     src: url(Letra/DinoTopia.ttf);
 }
+*{
+    background:#000;
+}
+
 #quieres{
     font-family:quieres;
     font: 70px;
