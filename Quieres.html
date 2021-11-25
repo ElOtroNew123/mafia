@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mp4.css">
+</head>
+<body>
+    </html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Servicios</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('Ahora ya somos novios :3');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+
+        }
+    </script>
+</head>
+<body>
+    <p id="quieres" width="70px">¿Quieres ser mi novia?</p>
+    <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si">
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" class="no" />
+    <img src="A-removebg-preview.png" width="200">
+</body>
+
+    
+</body>
+
