@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/320.css">
+	<link rel="stylesheet" href="css/melvyn.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<title>Melvyn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="circulo-icon.png" href="https://raw.githubusercontent.com/ElOtroNew123/mafia/main/circulo-icon.png">
+</head>
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+.wrapper{
+  display: inline-flex;
+}
+.wrapper .icon{
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span{
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #383733bd;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i{
+  line-height: 60px;
+  font-size: 25px;
+}
+.wrapper .icon .tooltip{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip{
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .tooltip:before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover span{
+  color: #fff;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before{
+  background: #3B5999;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before{
+  background: #46C1F6;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before{
+  background: #e1306c;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before{
+  background: #333;
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip:before{
+  background: #DE463B;
+}
+@media screen and (max-width:320px){
+  main .texto h2{
+      width: 3px;
+      height: 200px;
+      padding: 20px;
+   }
+   .header{
+      width: 15%;
+      height: 300px;
+      background: url(img/1.jpg) black;
+      background-size: cover;
+      background-position: center;
+  }
+   
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background: url(./img/inicio2.png);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    cursor: url(./cursor/Kunai.png), auto;
+}
+a{
+  cursor: url(./cursor/Naruto.png), auto;
+}
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.contenedor{
+    width: 70%;
+    
+    margin: 0 auto;
+    border:1px solid #c1c1c1;
+}
+
+header{
+    width: 100%;
+    height: 400px;
+    background: url(./img/3.jpg) black;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+main{
+    background: #fff;
+}
+
+
+
+main{
+    padding:  0 20px ;
+}
+
+main .perfil{
+    width: 120px;
+    height: 150px;
+    background: gray;
+    margin: -80px auto 0 20px auto 0;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    padding: 0 4px 0 0;
+
+}
+
+
+main .perfil img{
+    width: 104%;
+    border-radius: 50%;
+}
+
+
+
+body{
+    font-family: 'Comic Neue', cursive;
+}
+
+
+
+main .texto h2{
+    width: 390px;
+    height: 200px;
+    padding: 20px;
+    /*border: 1px solid #000;*/
+    /*text-align: center;*/
+}
+
+
+main .texto p{
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+
+footer{
+  
+    padding: 0px;
+
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+@media screen and (max-width:320px){
+    main .texto h2{
+        width: 3px;
+        height: 200px;
+        padding: 20px;
+     }
+     .header{
+        width: 15%;
+        height: 300px;
+        background: url(img/1.jpg) black;
+        background-size: cover;
+        background-position: center;
+    }
+     
+    }
+    @media (min-width:320px) and (max-width:375px){
+        main .texto h2{
+            width: 195px;
+            height: 200px;
+            padding: 20px;
+         }
+         .header{
+            width: 15%;
+            height: 300px;
+            background: url(img/inicio2.png)black;
+            background-size: cover;
+            background-position: center;
+        }
+         
+        }
+@media (min-width:375px) and (max-width:425px){
+            main .texto h2{
+                width: 205px;
+                height: 200px;
+                padding: 20px;
+             }
+             .header{
+                width: 15%;
+                height: 300px;
+                background: url(img/inicio2.png)black;
+                background-size: cover;
+                background-position: center;
+            }
+             
+            }
+
+</style>
+
+<body>
+
+    <div class="contenedor">
+        <header>
+
+        </header>
+
+        <main>
+            <div class="perfil">
+                <img src="img/melvyn.png" alt="">
+            </div>
+
+            <div class="texto">
+                <h2 class=""> Melvyn Harrison Miguel Gavilán 
+                    3° administrador</h2>
+  <h1>Descripción</h1>
+                    Desde las selvas más vacías hasta los huevos de jared presentamos a Melvin!
+                    Este miembro tiene la familia más grande de latinoamérica (monos)
+                    <p>Apodos: </p> Macaco, sopa do macaco, macaco superior, mono,  chimpancé, orangután flaco e impostor
+                    <p> Fan de:</p>  Lolis
+                   <p> juegos:</p> Camawars, correr de la policía de tráfico de animales y FBI
+                   <p> Experto en:</p> Comer los plátanos  de jared y adriel.
+                   <p> Vive en:</p> La selva
+                  <p> Premios: </p>Calentar a media selva con su versión mujer y ser la primera persona en ser llamada por el 911
+                </p>
+                <p>
+                    Redes sociales:
+                </p>
+                <body>
+                    <div class="wrapper">
+                        <div class="icon facebook">
+                           <div class="tooltip">
+                              Facebook
+                           </div>
+                           <a href="https://www.facebook.com/profile.php?id=100023561113834"><span><i class="fab fa-facebook-f"></i></span></a>
+                        </div>
+                    </div>
+                </body>
+            </div>
+        
+        </main>
+
+        <footer>
+
+        </footer>
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>
